@@ -1,362 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-brand">
-            <img src="We-sites.png" alt="Logo" class="nav-logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#landingPage">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Other</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                </ul>
-            </li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
+      <div class="nav-brand">
+        <img src="We-sites.png" alt="Logo" class="nav-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#landingPage">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Other</a>
+          <ul class="dropdown-menu">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
     </nav>
 
     <!-- Modal for Name -->
     <div class="modal" id="modal">
-        <div class="modal-inner">
-            <h1>What is your name?</h1>
-            <input type="text" id="userName" placeholder="Enter your name" />
-            <button id="submitName">Submit</button>
-        </div>
+      <div class="modal-inner">
+        <h1>What is your name?</h1>
+        <input type="text" id="userName" placeholder="Enter your name" />
+        <button id="submitName">Submit</button>
+      </div>
     </div>
 
     <!-- Landing Page -->
     <section class="landing" id="landingPage">
-        <div class="landing-container">
-            <div class="landing-photo">
-                <img src="We-sites.png" alt="Logo" />
-            </div>
-            <div class="landing-info">
-                <h1>WeSites</h1>
-            </div>
+      <div class="landing-container">
+        <div class="landing-photo">
+          <img src="We-sites.png" alt="Logo" />
         </div>
+        <div class="landing-info">
+          <h1>WeSites</h1>
         </div>
+      </div>
     </section>
-
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2 class="tittle">About Us</h2>
-        <div class="team">
-            <div class="team-member">
-                <div class="team-name" id="Syafiq">
-                    <h3>Syafiq</h3>
-                </div>
-                <div class="team-photo">
-                    <img src="Miku Nakano, HD Png Download , Transparent Png Image - PNGitem.jpeg" alt="Syafiq" />
-                </div>
+      <h2 class="tittle">About Us</h2>
+      <div class="team">
+        <div class="team-member">
+          <div class="team-name" id="Syafiq">
+            <h3>Syafiq</h3>
+          </div>
+          <div class="team-photo">
+            <img
+              src="Miku Nakano, HD Png Download , Transparent Png Image - PNGitem.jpeg"
+              alt="Syafiq"
+            />
+          </div>
 
-                <p>I am a passionate web developer.</p>
-            </div>
-            <div class="team-member">
-                <div class="team-name" id="Dimas">
-                    <h3>Dimas</h3>
-                </div>
-                <div class="team-photo">
-                    <img src="Miku Nakano, HD Png Download , Transparent Png Image - PNGitem.jpeg" alt="Dimas" />
-                </div>
-                <p>I am a passionate web developer.</p>
-            </div>
+          <p>I am a passionate web developer.</p>
         </div>
+        <div class="team-member">
+          <div class="team-name" id="Dimas">
+            <h3>Dimas</h3>
+          </div>
+          <div class="team-photo">
+            <img
+              src="Miku Nakano, HD Png Download , Transparent Png Image - PNGitem.jpeg"
+              alt="Dimas"
+            />
+          </div>
+          <p>I am a passionate web developer.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <h2 class="tittle">Our Services</h2>
-        <div class="services-container">
-            <div class="service">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>Responsive Design</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail">Desain web yang fleksibel dan nyaman diakses di semua perangkat—mulai dari desktop
-                        hingga smartphone. Tampilan akan menyesuaikan ukuran layar tanpa kehilangan fungsi atau
-                        estetika.</p>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>ChatBot</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail">Pembuatan chatbot pintar untuk membantu otomatisasi layanan pelanggan, menjawab
-                        pertanyaan umum, atau memberikan informasi real-time dengan teknologi AI dan NLP.</p>
-                </div>
-            </div>
-            <div class="service service-center">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>Web Development</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail">Pembuatan dan pengembangan website interaktif, modern, dan responsive yang
-                        disesuaikan dengan kebutuhan user. Fokus pada performa, keamanan, dan user experience terbaik.
-                    </p>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>ACC Project</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail">Layanan asistensi untuk approval atau pengesahan project—mulai dari pengecekan,
-                        revisi, sampai validasi agar project siap dipresentasikan atau diluncurkan.</p>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>Tugas IT</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail"> Bantuan pengerjaan tugas-tugas di bidang Teknologi Informasi, baik berupa coding,
-                        dokumentasi, hingga konsultasi ide. Cocok untuk pelajar dan mahasiswa jurusan IT.</p>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-img">
-                    <img src="" alt="">
-                </div>
-                <div class="service-info">
-                    <h3>Debugging</h3>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="detail">Proses mencari dan memperbaiki error (bug) dalam kode program agar aplikasi
-                        berjalan mulus tanpa crash. Fokus pada efisiensi, stabilitas, dan kualitas kode yang bersih dan
-                        bisa di-maintain.</p>
-                </div>
-            </div>
+      <h2 class="tittle">Our Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>Responsive Design</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Desain web yang fleksibel dan nyaman diakses di semua
+              perangkat—mulai dari desktop hingga smartphone. Tampilan akan
+              menyesuaikan ukuran layar tanpa kehilangan fungsi atau estetika.
+            </p>
+          </div>
         </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>ChatBot</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Pembuatan chatbot pintar untuk membantu otomatisasi layanan
+              pelanggan, menjawab pertanyaan umum, atau memberikan informasi
+              real-time dengan teknologi AI dan NLP.
+            </p>
+          </div>
+        </div>
+        <div class="service service-center">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>Web Development</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Pembuatan dan pengembangan website interaktif, modern, dan
+              responsive yang disesuaikan dengan kebutuhan user. Fokus pada
+              performa, keamanan, dan user experience terbaik.
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>ACC Project</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Layanan asistensi untuk approval atau pengesahan project—mulai
+              dari pengecekan, revisi, sampai validasi agar project siap
+              dipresentasikan atau diluncurkan.
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>Tugas IT</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Bantuan pengerjaan tugas-tugas di bidang Teknologi Informasi, baik
+              berupa coding, dokumentasi, hingga konsultasi ide. Cocok untuk
+              pelajar dan mahasiswa jurusan IT.
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="" alt="" />
+          </div>
+          <div class="service-info">
+            <h3>Debugging</h3>
+            <button class="read-more-btn">Read More</button>
+            <p class="detail">
+              Proses mencari dan memperbaiki error (bug) dalam kode program agar
+              aplikasi berjalan mulus tanpa crash. Fokus pada efisiensi,
+              stabilitas, dan kualitas kode yang bersih dan bisa di-maintain.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="tittle">Our Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <img src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
-                    alt="HTML" />
-                <h3>HTML</h3>
-                <p>We build clean, structured, and semantic HTML that makes your website accessible and SEO-friendly.
-                </p>
-                <div class="bubble">Semantic Markup</div>
-            </div>
-            <div class="skill">
-                <img src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
-                    alt="CSS" />
-                <h3>CSS</h3>
-                <p>Our CSS skills help us create visually stunning designs, with layouts and styles that adapt to any
-                    device.</p>
-                <div class="bubble">Responsive Design</div>
-            </div>
-            <div class="skill">
-                <img src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
-                    alt="JavaScript" />
-                <h3>JavaScript</h3>
-                <p>We bring websites to life with JavaScript, creating dynamic, interactive, and user-friendly
-                    interfaces.</p>
-                <div class="bubble">Interactive Elements</div>
-            </div>
-            <div class="skill">
-                <img src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
-                    alt="Bootstrap" />
-                <h3>Bootstrap</h3>
-                <p>We utilize Bootstrap to build responsive, mobile-first websites quickly and efficiently.</p>
-                <div class="bubble">Grid System</div>
-            </div>
-            <div class="skill">
-                <img src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
-                    alt="Tailwind CSS" />
-                <h3>Tailwind CSS</h3>
-                <p>We use Tailwind CSS to create custom, utility-first designs with minimal effort.</p>
-                <div class="bubble">Utility-First</div>
-            </div>
+      <h2 class="tittle">Our Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
+            alt="HTML"
+          />
+          <h3>HTML</h3>
+          <p>
+            We build clean, structured, and semantic HTML that makes your
+            website accessible and SEO-friendly.
+          </p>
+          <div class="bubble">Semantic Markup</div>
         </div>
+        <div class="skill">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
+            alt="CSS"
+          />
+          <h3>CSS</h3>
+          <p>
+            Our CSS skills help us create visually stunning designs, with
+            layouts and styles that adapt to any device.
+          </p>
+          <div class="bubble">Responsive Design</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
+            alt="JavaScript"
+          />
+          <h3>JavaScript</h3>
+          <p>
+            We bring websites to life with JavaScript, creating dynamic,
+            interactive, and user-friendly interfaces.
+          </p>
+          <div class="bubble">Interactive Elements</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
+            alt="Bootstrap"
+          />
+          <h3>Bootstrap</h3>
+          <p>
+            We utilize Bootstrap to build responsive, mobile-first websites
+            quickly and efficiently.
+          </p>
+          <div class="bubble">Grid System</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221015/original/pngtree-anak-sd-bertopi-png-image_8695966.png"
+            alt="Tailwind CSS"
+          />
+          <h3>Tailwind CSS</h3>
+          <p>
+            We use Tailwind CSS to create custom, utility-first designs with
+            minimal effort.
+          </p>
+          <div class="bubble">Utility-First</div>
+        </div>
+      </div>
     </section>
 
-
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-            
-<div class="contact-container">
-            <div class="contact-input">
-            <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                -
-                class="contact-left"
-                >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="a7a2d5b1-57bb-4f78-a7f6-2a8a6ea96e33"
-                />
-                <h2 class="section-tittle">Contact Us</h2>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  class="contact-inputs"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  class="contact-inputs"
-                  required
-                />
-                <textarea
-                  name="message"
-                  placeholder="Your message"
-                  class="contact-inputs"
-                  required
-                ></textarea>
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
+      <div class="contact-container">
+        <div class="contact-input">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="a7a2d5b1-57bb-4f78-a7f6-2a8a6ea96e33"
+            />
+            <h2 class="section-tittle">Contact Us</h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="contact-inputs"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
             <div class="contact_info">
-                <h3>Contact Info</h3>
-                <h5>Instagram: <a href="https://www.instagram.com/wesite.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">WeSite</a></h5>
+              <h3>Contact Info</h3>
+              <h5>
+                Instagram:
+                <a
+                  href="https://www.instagram.com/wesite.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  >WeSite</a
+                >
+              </h5>
             </div>
+          </form>
         </div>
+      </div>
     </section>
-
-
 
     <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
-        <h2>What People Say About Us</h2>
-        <div class="testimonials-container">
-            <div class="testimonial"></div>
-        </div>
+      <h2>What People Say About Us</h2>
+      <div class="testimonials-container">
+        <div class="testimonial"></div>
+      </div>
     </section>
+
     <script>
-        // === Variabel Global ===
-        const modal = document.getElementById('modal');
-        const landing = document.getElementById('landingPage');
-        const nameInput = document.getElementById('userName');
-        const submitBtn = document.getElementById('submitName');
+      // === Variabel Global ===
+      const modal = document.getElementById("modal");
+      const landing = document.getElementById("landingPage");
+      const nameInput = document.getElementById("userName");
+      const submitBtn = document.getElementById("submitName");
 
+      document.addEventListener("DOMContentLoaded", function () {
+        const readMoreBtns = document.querySelectorAll(".read-more-btn");
+        const servicesContainer = document.querySelector(".services-container");
 
-        document.addEventListener('DOMContentLoaded', function () {
-            const readMoreBtns = document.querySelectorAll('.read-more-btn');
-            const servicesContainer = document.querySelector('.services-container');
+        // Create overlay element
+        const overlay = document.createElement("div");
+        overlay.className = "overlay";
+        document.body.appendChild(overlay);
 
-            // Create overlay element
-            const overlay = document.createElement('div');
-            overlay.className = 'overlay';
-            document.body.appendChild(overlay);
+        readMoreBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const service = this.closest(".service");
 
-            readMoreBtns.forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const service = this.closest('.service');
-
-                    if (service.classList.contains('expanded')) {
-                        // Collapse
-                        service.classList.remove('expanded');
-                        this.textContent = 'Read More';
-                        overlay.classList.remove('active');
-                        document.body.style.overflow = '';
-                    } else {
-                        // Expand
-                        service.classList.add('expanded');
-                        this.textContent = 'Read Less';
-                        overlay.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                    }
-                });
-            });
-
-            // Close on overlay click
-            overlay.addEventListener('click', function () {
-                const expandedService = document.querySelector('.service.expanded');
-                if (expandedService) {
-                    expandedService.classList.remove('expanded');
-                    expandedService.querySelector('.read-more-btn').textContent = 'Read More';
-                    overlay.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
-            });
-        });
-
-
-        // === Fungsi Modal ===
-        function openModal() {
-            modal.classList.add('open');
-        }
-
-        function closeModal() {
-            modal.classList.remove('open');
-        }
-
-        // === Fungsi untuk Update Welcome Message ===
-        function updateLandingPage(name) {
-            landing.innerHTML = `
-         <div class="landing-container">
-          <div class="landing-photo">
-            <img src="We-sites.png" alt="Logo" />
-          </div>
-            <div class="landing-info">
-                 <h3>Welcome, ${name}!</h3>
-                <h1>WeSites</h1>
-                <p>We are a creative team. We build great websites and digital solutions.</p>
-            </div>
-          </div>
-        </div>
-          `;
-        }
-
-        // === Fungsi Validasi Nama ===
-        function isValidName(name) {
-            return name && name.trim().length > 1;
-        }
-
-        // === Event Handler Submit Nama ===
-        function handleSubmitName() {
-            const name = nameInput.value.trim();
-            if (isValidName(name)) {
-                updateLandingPage(name);
-                closeModal();
+            if (service.classList.contains("expanded")) {
+              // Collapse
+              service.classList.remove("expanded");
+              this.textContent = "Read More";
+              overlay.classList.remove("active");
+              document.body.style.overflow = "";
             } else {
-                alert("Please enter a valid name (min 2 characters).");
+              // Expand
+              service.classList.add("expanded");
+              this.textContent = "Read Less";
+              overlay.classList.add("active");
+              document.body.style.overflow = "hidden";
             }
-        }
-
-        // === Event Listener ===
-        submitBtn.addEventListener('click', handleSubmitName);
-
-        // === Auto Show Modal setelah Load ===
-        window.addEventListener('load', () => {
-            setTimeout(openModal, 1000); // delay 1 detik
+          });
         });
+
+        // Close on overlay click
+        overlay.addEventListener("click", function () {
+          const expandedService = document.querySelector(".service.expanded");
+          if (expandedService) {
+            expandedService.classList.remove("expanded");
+            expandedService.querySelector(".read-more-btn").textContent =
+              "Read More";
+            overlay.classList.remove("active");
+            document.body.style.overflow = "";
+          }
+        });
+      });
+
+      // === Fungsi Modal ===
+      function openModal() {
+        modal.classList.add("open");
+      }
+
+      function closeModal() {
+        modal.classList.remove("open");
+      }
+
+      // === Fungsi untuk Update Welcome Message ===
+      function updateLandingPage(name) {
+        landing.innerHTML = `
+                <div class="landing-container">
+                    <div class="landing-photo">
+                        <img src="We-sites.png" alt="Logo" />
+                    </div>
+                    <div class="landing-info">
+                        <h3>Welcome, ${name}!</h3>
+                        <h1>WeSites</h1>
+                        <p>We are a creative team. We build great websites and digital solutions.</p>
+                    </div>
+                </div>
+            `;
+      }
+
+      // === Fungsi Validasi Nama ===
+      function isValidName(name) {
+        return name && name.trim().length > 1;
+      }
+
+      // === Event Handler Submit Nama ===
+      function handleSubmitName() {
+        const name = nameInput.value.trim();
+        if (isValidName(name)) {
+          updateLandingPage(name);
+          closeModal();
+        } else {
+          alert("Please enter a valid name (min 2 characters).");
+        }
+      }
+
+      // === Event Listener ===
+      submitBtn.addEventListener("click", handleSubmitName);
+
+      // === Auto Show Modal setelah Load ===
+      window.addEventListener("load", () => {
+        setTimeout(openModal, 1000); // delay 1 detik
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
-`````

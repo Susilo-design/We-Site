@@ -519,10 +519,10 @@ p {
   transform: translateY(0);
 }
 
-.contact-container{
-    display: flex;
-    gap: 10rem;
-    align-items: centerx    ;
+.contact-container {
+  display: flex;
+  gap: 10rem;
+  align-items: centerx;
 }
 
 /* Responsive */
@@ -534,9 +534,6 @@ p {
     flex-direction: column;
   }
 }
-
-
-
 
 /* Overlay Styles */
 .overlay {
